@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import './Profile_Detail.dart';
 import './Upload_foto.dart';
+import 'package:mpci_pajero/widget/Widget.dart';
 import 'package:mpci_pajero/screen/Login_page.dart';
 
 
@@ -13,7 +14,9 @@ class Profile_Page extends StatefulWidget{
 }
 class AkunState extends State<Profile_Page>{
     @override
+    Screen size;
   Widget build(BuildContext context) {
+      size = Screen(MediaQuery.of(context).size);
     // TODO: implement build
     return Scaffold(
       backgroundColor: Colors.grey[200],

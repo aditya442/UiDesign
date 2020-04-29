@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mpci_pajero/widget/bezierContainer.dart';
 import 'package:mpci_pajero/widget/customClipper.dart';
 import './home/Button_Navigation.dart';
+import 'package:mpci_pajero/widget/Widget.dart';
 
 class Upload_Dokument extends StatefulWidget{
   @override
@@ -28,8 +29,10 @@ class UploadState extends State<Upload_Dokument>{
       ),
     );
   }
+  Screen size;
   @override
   Widget build(BuildContext context) {
+    size = Screen(MediaQuery.of(context).size);
     // TODO: implement build
     return Scaffold(
 //      appBar: AppBar(

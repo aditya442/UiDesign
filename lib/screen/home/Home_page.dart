@@ -53,10 +53,12 @@ class HomeState extends State<Home_Page>{
       // print('errorrr on scrolling notifiiieeer');
     }
   }
-
+  Screen size;
   ScrollController scrollController;
   @override
   Widget build(BuildContext context) {
+    size = Screen(MediaQuery.of(context).size);
+
     // TODO: implement build
     return Scaffold(
         resizeToAvoidBottomPadding: true,

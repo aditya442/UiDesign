@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:mpci_pajero/widget/bezierContainer.dart';
 import './registrasi_page.dart';
 import 'package:mpci_pajero/screen/home/Button_Navigation.dart';
+import 'package:mpci_pajero/widget/Widget.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key, this.title}) : super(key: key);
@@ -14,6 +15,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  Screen size;
   Widget _backButton() {
     return InkWell(
       onTap: () {
@@ -165,6 +167,7 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    size = Screen(MediaQuery.of(context).size);
     return Scaffold(
         body: SingleChildScrollView(
             child: Container(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './Profile_page.dart';
 import './Button_Navigation.dart';
+import 'package:mpci_pajero/widget/Widget.dart';
 
 class P_Detail_Page  extends StatefulWidget{
   @override
@@ -8,7 +9,9 @@ class P_Detail_Page  extends StatefulWidget{
 }
 class DetailState extends State<P_Detail_Page>{
   @override
+  Screen size;
   Widget build(BuildContext context) {
+    size = Screen(MediaQuery.of(context).size);
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
